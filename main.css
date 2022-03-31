@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+body{
+    background-color:#000;;
+}
+.swiper {
+    width: 100%;
+    height:100vh;
+}
+.swiper__image-width{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, .65);
+    top: 0;
+    left: 0; 
+    z-index: 9;
+    pointer-events: none;
+}
+.swiper-button-prev,
+.swiper-button-next{
+    position: absolute;
+    left: unset !important;
+    right: 42.5px !important;
+}
+.swiper-button-prev{
+    top: calc(50% - 50px);
+}
+.swiper-button-next{
+    top: calc(50% + 50px);
+}
+.swiper-button-next i,
+.swiper-button-prev i{
+    color: #4d008c;
+    font-size: 30px;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    display: none;
+}
+.swiper-pagination{
+    right: 50px !important;
+}
+.swiper-pagination-bullet{
+    background-color: #4d008c;
+    width: 12px;
+    height: 12px;
+}
+.swiper__container__items{
+    position: absolute;
+    z-index: 999;
+    margin: 80px 0 0 0;
+    max-width: 80%;
+    width: 80%;
+}
+.swiper__descripcion{
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 60px;
+
+}
+.swiper__link__button{
+    color: #fff;
+    background-color: #4d008c;
+    width: 100%;
+    max-width: 300px;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 5px;
+    transition: .2s all ease;
+}
+.swiper__link__button:hover{
+    background-color: #410077;
+}
+.swiper-slide-with-animation{
+    animation: 1s;
+    animation-name: slidein;
+}
+@keyframes slidein{
+    from{
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+@media(max-width: 576px){
+    .swiper-pagination{
+        right: 20px !important;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        position: absolute;
+        left: unset !important;
+        right: 13px !important;
+    }
+    .swiper__descripcion{
+        font-size: 25px;
+    }
+    .swiper__container__items{
+        margin: 0;
+    }
+}

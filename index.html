@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide swiper-slide-with-animation">
+          <img class="swiper__image-width" src="https://primer.150porciento.com/wp-content/uploads/2022/03/banner-asesoria.jpg" alt="">
+          <div class="swiper__container__items">
+            <p class="swiper__descripcion">El capital que tu innovación necesita</p>
+            <a href="/registrate" class="swiper__link__button">Ver más</a>
+          </div>
+      </div>
+      <div class="swiper-slide">
+        <img class="swiper__image-width" src="https://primer.150porciento.com/wp-content/uploads/2022/03/equipo-trabajo.jpg" alt="">
+        <div class="swiper__container__items">
+            <p class="swiper__descripcion">Conoce nuestro equipo y valores como empresa</p>
+            <a href="/acerda-de-primer" class="swiper__link__button">Leer más</a>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <img class="swiper__image-width" src="https://primer.150porciento.com/wp-content/uploads/2022/03/contacto.jpg" alt="">
+        <div class="swiper__container__items">
+            <p class="swiper__descripcion">¿Quieres contactarnos o tinenes dudas? ingresa tus datos en el formulario</p>
+            <a href="/" class="swiper__link__button">Leer más</a>
+        </div>
+    </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev">
+        <i class="fa-solid fa-angle-up"></i>
+    </div>
+    <div class="swiper-button-next">
+        <i class="fa-solid fa-angle-down"></i>
+    </div>
+  
+</div>
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module">
+        import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+    </script>
+    <script src="mainscript.js"></script>
+    <script src="https://kit.fontawesome.com/2e5d66409c.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
